@@ -14,6 +14,9 @@ const { Account, Vault, VAULT_IDS } = require("@xbacked-dao/xbacked-sdk");
   // create a vault
   const vault = new Vault({ id: vaultId });
 
+  // Opt into token
+  const optIn = await acc.optIntoToken(process.env.xUSD_ID);
+
   // Get vault global start
   const vaultState = await acc.getVaultState({ vault });
 

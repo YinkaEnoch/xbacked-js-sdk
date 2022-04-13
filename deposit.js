@@ -1,11 +1,6 @@
 require("dotenv").config();
 
-const {
-  Account,
-  Vault,
-  vaultDiscovery,
-  VAULT_IDS,
-} = require("@xbacked-dao/xbacked-sdk");
+const { Account, Vault, VAULT_IDS } = require("@xbacked-dao/xbacked-sdk");
 
 (async () => {
   const acc = new Account({
@@ -18,4 +13,9 @@ const {
 
   // create a vault
   const vault = new Vault({ id: vaultId });
+
+  // Deposit more collateral
+  const amount = 10;
+  const depositStatus = await acc.depositCollateral({ amount, vault });
+  console.log({ depositStatus });
 })();

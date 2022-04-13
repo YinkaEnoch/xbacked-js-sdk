@@ -1,3 +1,7 @@
+/**
+ * Mint more xUSD - provided the collateral ratio will not fall below 110%
+ * */
+
 require("dotenv").config();
 
 const { Account, Vault, VAULT_IDS } = require("@xbacked-dao/xbacked-sdk");

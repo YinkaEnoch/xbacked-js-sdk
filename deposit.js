@@ -1,3 +1,8 @@
+/**
+ * Deposit more ALGO or ASA to the vault - so as to increase the collateral
+ * ratio
+ * */
+
 require("dotenv").config();
 
 const { Account, Vault, VAULT_IDS } = require("@xbacked-dao/xbacked-sdk");

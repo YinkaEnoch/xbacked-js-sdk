@@ -9,9 +9,17 @@ const acc = new Account({
 // Get account balance
 acc
   .getBalance({ tokenId: 0 })
-  .then((res) => console.log(`ALGO: ${res / 1000000}`));
+  .then((res) =>
+    res > 0
+      ? console.log(`ALGO: ${res / 1000000}`)
+      : console.log(`ALGO: ${res}`)
+  );
 
 // Get xUSD balance
 acc
   .getBalance({ tokenId: process.env.xUSD_ID })
-  .then((res) => console.log(`xUSD: ${res}`));
+  .then((res) =>
+    res > 0
+      ? console.log(`xUSD: ${res / 1000000}`)
+      : console.log(`xUSD: ${res}`)
+  );

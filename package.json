@@ -1,0 +1,16 @@
+{
+  "name": "jssdk",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Yinka Enoch Adedokun <adedokunyinkaenoch@gmail.com> (https://yinkaenoch.github.io/)",
+  "license": "ISC",
+  "dependencies": {
+    "@xbacked-dao/xbacked-sdk": "^0.0.30",
+    "dotenv": "^16.0.0"
+  }
+}
